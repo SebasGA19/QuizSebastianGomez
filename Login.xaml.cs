@@ -22,5 +22,19 @@ namespace QuizSEBASTIANGOMEZ
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtUsername.Text == "sebastian" && txtPassword.Password == "1234") 
+            {
+                MainWindow w = (MainWindow)Window.GetWindow(this);
+                w.frameMain.NavigationService.Navigate(new Home());
+            }
+
+            else
+            {
+                MessageBox.Show("Credenciales Invalidas");
+            }
+        }
     }
 }

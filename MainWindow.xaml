@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuizSEBASTIANGOMEZ"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Label Content="My App" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52" Width="113" FontSize="30"/>
-        <Frame Name="mainFrame" Content="" Margin="0,52,0,52"/>
+        <Frame Name="frameMain" Content="" Margin="0,52,0,52" NavigationUIVisibility="Hidden" />
 
     </Grid>
 </Window>

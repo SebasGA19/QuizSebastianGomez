@@ -1,0 +1,27 @@
+﻿<Page x:Class="QuizSEBASTIANGOMEZ.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuizSEBASTIANGOMEZ"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="790"
+      Title="Home" Background="#FFA0ADE8">
+
+    <Grid>
+        <RadioButton Name="rbtnGraficas" Content="Tarjetas Graficas" HorizontalAlignment="Left" Margin="70,25,0,0" VerticalAlignment="Top" Checked="rbtnGraficas_Checked" FontWeight="Bold"/>
+        <RadioButton Name="rbtnProcesadores" Content="Procesadores" HorizontalAlignment="Left" Margin="210,25,0,0" VerticalAlignment="Top" Checked="rbtnProcesadores_Checked" FontWeight="Bold"/>
+        <ComboBox Name="cboxGraficas" Visibility="Hidden" HorizontalAlignment="Left" Margin="54,71,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cboxProcesadores" Visibility="Hidden" HorizontalAlignment="Left" Margin="210,71,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnCarro" Content="Agregar al carro" HorizontalAlignment="Left" Margin="73,155,0,0" VerticalAlignment="Top" Height="34" Width="108" Click="btnCarro_Click" FontWeight="Bold"/>
+        <ListBox Name="lboxCarrito" Margin="395,32,237,116"/>
+        <Slider Name="sldTienda" Maximum="5" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="194,175,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="596,32,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="202" Width="146"/>
+        <Button Name="btnComprar" Content="COMPRAR" HorizontalAlignment="Left" Margin="442,251,0,0" VerticalAlignment="Top" Height="29" Width="64" Click="btnComprar_Click" FontWeight="Bold"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="194,149,0,0" VerticalAlignment="Top" Width="76" FontWeight="Bold"/>
+        <Label Content="Carrito de compra" HorizontalAlignment="Left" Margin="389,-1,0,0" VerticalAlignment="Top" Width="170" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Factura" HorizontalAlignment="Left" Margin="630,-2,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" FontSize="18"/>
+        <Button Name="btnLogout" Content="LOGOUT" HorizontalAlignment="Left" Margin="635,247,0,0" VerticalAlignment="Top" Height="37" Width="73" FontWeight="Bold" Click="btnLogout_Click"/>
+
+    </Grid>
+</Page>
